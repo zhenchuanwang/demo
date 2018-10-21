@@ -4,7 +4,7 @@
     <div
         class="login-container"
         :style="`background-image: url('${$globalVar.site.loginImageUrl||loginBg}');`"
-        v-page-title="'登录'"
+        v-page-title="'登录fsd123sdf岁的法"
         @keyup.enter="onSubmit">
         <div class="inner">
             <div class="header">{{ $globalVar.site.name }}</div>
