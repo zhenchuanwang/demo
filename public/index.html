@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>vue-platform</title>
+    <script>
+    var win = window;
+    win.globalVar = {
+        isDev: !!'<%= process.env.NODE_ENV==="development"?true:"" %>',
+        baseUrl: '<%= BASE_URL %>',
+        isInitAppDataEnd: false, //应用数据初始化完成否
+        mapKey: {
+            baiduAK: 'YQjBc4ycQ7Dz5Y1mf7bUSoBeUmnS6XmG',
+            tencentKey: 'PZIBZ-DKV3W-MEPRX-RSVU2-PLWJJ-HNFOL',
+        },
+        site: {
+            name: '通用商城管理平台',
+            loginImageUrl: '',
+        },
+    };
+    </script>
+</head>
+<body>
+<script src="https://cdn.bootcss.com/tinymce/4.7.13/tinymce.min.js"></script>
+<noscript>
+    <strong>很抱歉，如果没有启用JavaScript, vue-platform 就不能正常工作。请启用JavaScript。</strong>
+</noscript>
+<div id="app">
+    <style>
+    html, body, #app {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #app {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #e9ecef;
+    }
+    </style>
+    应用加载中请稍等...
+</div>
+<!-- built files will be auto injected -->
+</body>
+</html>
